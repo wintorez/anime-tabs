@@ -1,0 +1,30 @@
+$active: #4a90e2;
+
+.tabs {
+  display: flex;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+
+  &-item {
+    box-sizing: border-box;
+    border-bottom: #d8d8d8 solid 2px;
+    margin-bottom: -2px;
+    cursor: pointer;
+    color: #a7a7a7;
+    padding: 12px 24px;
+    transition: all 0.5s;
+    height: 46px;
+
+    &:hover {
+      color: $active;
+      border-bottom-color: $active;
+      transition: all 1s;
+    }
+
+    &--selected {
+      color: $active;
+      transition: all 0.5s;
+      border-bottom: $active solid 4px;
+    }
+  }
+}
